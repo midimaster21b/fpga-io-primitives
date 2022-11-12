@@ -11,7 +11,7 @@
  *****************************************************************************/
 
 module oddr (clk, rst, d1, d2, q);
-   parameter string TARGET = "ULTRASCALE";
+   parameter string TARGET = "RTL";
 
    input	    logic clk;
    input	    logic rst;
