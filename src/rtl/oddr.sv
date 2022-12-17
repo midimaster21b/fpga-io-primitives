@@ -53,7 +53,7 @@ module oddr (clk, rst, d1, d2, q);
 
 	 end
 
-	 assign q = clk ? d2_r : d1_r;
+	 assign q = clk ? d1_r : d2_r;
 
       end // Generic
    endgenerate
