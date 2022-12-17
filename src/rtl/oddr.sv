@@ -53,17 +53,8 @@ module oddr (clk, rst, d1, d2, q);
 
 	 end
 
-	 // Output data one
-	 always @(posedge clk) begin
-	    q <= d1_r;
+	 assign q = clk ? d2_r : d1_r;
 
-	 end
-
-	 // Output data two
-	 always @(negedge clk) begin
-	    q <= d2_r;
-
-	 end
       end // Generic
    endgenerate
 endmodule // oddr
